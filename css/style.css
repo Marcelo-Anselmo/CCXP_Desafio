@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    --primaryColor: #514988;
+    --secondaryColor: #FFD900;
+    --yellowTextColor: #F3C61F;
+}
