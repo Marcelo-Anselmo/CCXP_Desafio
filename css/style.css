@@ -117,3 +117,11 @@ button:hover {
     color: var(--yellowTextColor);
     transition: 0.3s;
 }
+
+.card-highlight {
+    box-shadow: 10px 10px 10px 10px grey;
+}
+
+.card-selected {
+    border: 5px solid green;
+}
