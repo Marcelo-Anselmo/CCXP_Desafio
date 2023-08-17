@@ -118,6 +118,27 @@ button:hover {
     transition: 0.3s;
 }
 
+/* Form */
+form{
+    background-color: var(--secondaryColor);
+    margin-top: 150px;
+}
+
+input{
+    background: var(--primaryColor);
+    border-radius: 10px;
+    color: var(--whiteColor);
+    border: 0;
+    margin: 30px;
+    width: 300px;
+    height: 70px;
+    font-size: 30px;
+}
+
+#button{
+    cursor: pointer;
+}
+
 .card-highlight {
     box-shadow: 10px 10px 10px 10px grey;
 }
