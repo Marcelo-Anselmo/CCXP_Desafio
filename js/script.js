@@ -27,6 +27,8 @@ const formatoTempo = (tempo) => {return tempo < 10? `0${tempo}` : tempo;}
 countDown();
 setInterval(countDown, 1000);
 
+const ingressos = []
+
 function Selector(selector) {
     let element = document.querySelector(selector)
     element.classList.toggle("card-highlight")
@@ -79,4 +81,16 @@ function AddKeyboardEventListeners(){
         }
     }, false)
 }
+
+selectCard = (selector) => {
+    var element = document.querySelector(selector)
+    element.classList.toggle("card-selected")
+    if(ingressos.includes(selector)) ingressos.pop(selector)
+    else ingressos.push(selector)
+}
+
+showSelectedCards = () => {
+    if(ingressos.length > 0) alert("Ingressos Selecionados:" + ingressos)
+}
+
 AddKeyboardEventListeners();
